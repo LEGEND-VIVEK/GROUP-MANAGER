@@ -8,9 +8,9 @@
          "group",
          "manager",
          "bot",
-         "mrjoker"
+         "groupmanager"
       ],   
-   "repository": "https://github.com/kjeymax/MR-JOKER_BOT.git",
+   "repository": "https://github.com/LEGEND-VIVEK/GROUP-MANAGER.git",
    "addons": [
       {
          "options": {
