@@ -18,10 +18,10 @@ async def bright(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...🚀")
             image = Image.open(a)
             brightness = ImageEnhance.Brightness(image)
-            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "Mrjoker_brightness.jpg"
+            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "groupcare_brightness.jpg"
             brightness.enhance(1.5).save(edit_img_loc)
             await message.reply_chat_action("upload_photo")
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
@@ -57,11 +57,11 @@ async def mix(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...🚀")
             image = Image.open(a)
             red, green, blue = image.split()
             new_image = Image.merge("RGB", (green, red, blue))
-            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "Mrjoker_mix.jpg"
+            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "groupcare_mix.jpg"
             new_image.save(edit_img_loc)
             await message.reply_chat_action("upload_photo")
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
@@ -90,7 +90,7 @@ async def black_white(client, message):
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
             os.makedirs(f"./DOWNLOADS/{userid}")
         download_location = "./DOWNLOADS" + "/" + userid + "/" + userid + ".jpg"
-        edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "Mrjoker_black_white.jpg"
+        edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "groupcare_black_white.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
                 "Downloading image", quote=True
@@ -98,7 +98,7 @@ async def black_white(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...🚀")
             image_file = cv2.imread(a)
             grayImage = cv2.cvtColor(image_file, cv2.COLOR_BGR2GRAY)
             cv2.imwrite(edit_img_loc, grayImage)
@@ -136,10 +136,10 @@ async def normal_blur(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...🚀")
             OriImage = Image.open(a)
             blurImage = OriImage.filter(ImageFilter.BLUR)
-            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "MrjokerBlurImage.jpg"
+            edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "groupcareBlurImage.jpg"
             blurImage.save(edit_img_loc)
             await message.reply_chat_action("upload_photo")
             await message.reply_to_message.reply_photo(edit_img_loc, quote=True)
