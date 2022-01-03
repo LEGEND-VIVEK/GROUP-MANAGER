@@ -1,4 +1,4 @@
-from mrjoker.mongo import client as db_x
+from groupcare.mongo import client as db_x
 
 lydia = db_x["CAHTBOT"]
 
