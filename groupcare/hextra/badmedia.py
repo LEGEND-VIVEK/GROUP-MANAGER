@@ -1,4 +1,4 @@
-from mrjoker import telethn as tbot
+from groupcare import telethn as tbot
 import requests
 import time
 
