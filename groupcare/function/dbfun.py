@@ -1,4 +1,4 @@
-from mrjoker import db
+from groupcare import db
 from typing import Dict, List, Union
 
 
