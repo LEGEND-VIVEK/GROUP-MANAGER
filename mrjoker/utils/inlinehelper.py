@@ -48,13 +48,13 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("🤡 𝗚𝗲𝘁 𝗠𝗼𝗿𝗲 𝗛𝗲𝗹𝗽 🤡", url=f"t.me/{BOT_USERNAME}?start=start"),
+        InlineKeyboardButton("💥 𝗚𝗲𝘁 𝗠𝗼𝗿𝗲 𝗛𝗲𝗹𝗽 💥", url=f"t.me/{BOT_USERNAME}?start=start"),
         InlineKeyboardButton("💥 𝗚𝗼 𝗜𝗻𝗹𝗶𝗻𝗲! 💥", switch_inline_query_current_chat=""),
     )
     answerss = [
         InlineQueryResultArticle(
             title="𝐈𝐧𝐥𝐢𝐧𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-            description="𝙈𝙧.𝙅𝙤𝙠𝙚𝙧 𝙃𝙚𝙡𝙥 𝙍𝙚𝙡𝙖𝙩𝙚𝙙 𝙏𝙤 𝙄𝙣𝙡𝙞𝙣𝙚 𝙐𝙨𝙖𝙜𝙚",
+            description="𝙜𝙧𝙤𝙐𝗽 𝐦𝐚𝐧𝙖𝙜𝙚𝙍 𝙃𝙚𝙡𝙥 𝙍𝙚𝙡𝙖𝙩𝙚𝙙 𝙏𝙤 𝙄𝙣𝙡𝙞𝙣𝙚 𝙐𝙨𝙖𝙜𝙚",
             input_message_content=InputTextMessageContent(__HELP__),
             thumb_url="https://telegra.ph/file/6525d89de5b72003d80fa.png",
             reply_markup=buttons,
@@ -73,7 +73,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[๓r.ว໐kēr 🤡](https://github.com/kjeymax/MR-JOKER_BOT):**
+**[𝙜𝙧𝙤𝙐𝗽 𝐦𝐚𝐧𝙖𝙜𝙚𝙍](https://github.com/LEGEND-VIVEK/GROUP-MANAGER):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
