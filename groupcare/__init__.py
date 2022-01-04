@@ -116,7 +116,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from mrjoker.config import Development as Config
+    from groupcare.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -239,7 +239,7 @@ motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
 engine = AIOEngine(motor, MONGO_DB)
 
-print("[MRJOKER]: INITIALZING AIOHTTP SESSION")
+print("[GROUP MANAGER]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -251,7 +251,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUDO_USERS = list(SUDO_USERS)
 
 # Load at end to ensure all prev variables have been set
-from mrjoker.modules.helper_funcs.handlers import (
+from groupcare.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
