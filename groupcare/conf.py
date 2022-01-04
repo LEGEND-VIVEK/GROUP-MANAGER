@@ -1,5 +1,5 @@
 from envparse import env
-from mrjoker import LOGGER
+from groupcare import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
