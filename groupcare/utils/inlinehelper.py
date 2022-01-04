@@ -19,9 +19,9 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from mrjoker import BOT_USERNAME, OWNER_ID, pbot, arq
-from mrjoker.utils.plh import convert_seconds_to_minutes as time_convert
-from mrjoker.utils.plh import fetch
+from groupcare import BOT_USERNAME, OWNER_ID, pbot, arq
+from groupcare.utils.plh import convert_seconds_to_minutes as time_convert
+from groupcare.utils.plh import fetch
 
 SUDOERS = OWNER_ID
 app = pbot
