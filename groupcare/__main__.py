@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from mrjoker import (
+from groupcare import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -23,10 +23,10 @@ from mrjoker import (
     updater,
 )
 
-from mrjoker.modules import ALL_MODULES
-from mrjoker.modules.helper_funcs.chat_status import is_user_admin
-from mrjoker.modules.helper_funcs.misc import paginate_modules
-from mrjoker.modules.connection import connected
+from groupcare.modules import ALL_MODULES
+from groupcare.modules.helper_funcs.chat_status import is_user_admin
+from groupcare.modules.helper_funcs.misc import paginate_modules
+from groupcare.modules.connection import connected
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello there*, *I*'*m* [GROUP MANAGER](https://telegra.ph/file/6525d89de5b72003d80fa.png)
-*I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group*
+*I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot developed by divya gupta and I will help in managing your group*
 🍃🔻 **Make sure you read** `INFO` **Section Below** 🔺🍃 
 """
 
