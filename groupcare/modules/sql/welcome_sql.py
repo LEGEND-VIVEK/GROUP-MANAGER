@@ -2,15 +2,15 @@ import random
 import threading
 from typing import Union
 
-from mrjoker.modules.helper_funcs.msg_types import Types
-from mrjoker.modules.sql import BASE, SESSION
+from groupcare.modules.helper_funcs.msg_types import Types
+from groupcare.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
 DEFAULT_GOODBYE = "Nice knowing ya!"
 
 DEFAULT_WELCOME_MESSAGES = [
-    "{first} is here!",  # Discord welcome messages copied
+    "{first} is here! welcome to the group",  # Discord welcome messages copied
     "Ready player {first}",
     "Genos, {first} is here.",
     "A wild {first} appeared.",
