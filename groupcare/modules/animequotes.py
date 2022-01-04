@@ -1,10 +1,10 @@
 import random
-import mrjoker.modules.animequotesstring as animequotesstring
+import groupcare.modules.animequotesstring as animequotesstring
 
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
+from groupcare import dispatcher
+from groupcarer.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
