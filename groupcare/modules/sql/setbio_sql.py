@@ -1,5 +1,5 @@
 import threading
-from mrjoker.modules.sql import BASE, SESSION
+from groupcare.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, UnicodeText, String
 
 
