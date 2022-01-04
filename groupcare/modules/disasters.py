@@ -7,10 +7,10 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from mrjoker import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
-from mrjoker.modules.helper_funcs.extraction import extract_user
-from mrjoker.modules.logchannel import gloggable
+from groupcare import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from groupcare.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
+from groupcare.modules.helper_funcs.extraction import extract_user
+from groupcare.modules.logchannel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "mrjoker/elevated_users.json")
 
