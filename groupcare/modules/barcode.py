@@ -11,9 +11,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from mrjoker import telethn as tbot
-from mrjoker import *
-from mrjoker.events import register
+from groupcareimport telethn as tbot
+from groupcare import *
+from groupcare.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URL)
