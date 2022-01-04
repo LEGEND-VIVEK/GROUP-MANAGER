@@ -1,5 +1,5 @@
-from mrjoker.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from mrjoker import DRAGONS
+from groupcare.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from groupcare import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
