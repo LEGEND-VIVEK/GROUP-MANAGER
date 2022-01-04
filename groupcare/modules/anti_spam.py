@@ -14,8 +14,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.global_bans_sql as sql
-from mrjoker import (
+import groupcare.modules.sql.global_bans_sql as sql
+from groupcare import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -29,14 +29,14 @@ from mrjoker import (
     dispatcher,
     sw,
 )
-from mrjoker.modules.helper_funcs.chat_status import (
+from groupcare.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from mrjoker.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from mrjoker.modules.helper_funcs.misc import send_to_list
-from mrjoker.modules.sql.users_sql import get_user_com_chats
+from groupcare.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from groupcare.modules.helper_funcs.misc import send_to_list
+from groupcare.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
