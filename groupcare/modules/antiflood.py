@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from mrjoker import TIGERS, WOLVES, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import (
+from groupcare import TIGERS, WOLVES, dispatcher
+from groupcare.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.sql import antiflood_sql as sql
+from groupcare.modules.logchannel import loggable
+from groupcare.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from mrjoker.modules.helper_funcs.string_handling import extract_time
-from mrjoker.modules.connection import connected
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.sql.approve_sql import is_approved
+from groupcare.modules.helper_funcs.string_handling import extract_time
+from groupcare.modules.connection import connected
+from groupcare.modules.helper_funcs.alternate import send_message
+from groupcare.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
