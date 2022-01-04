@@ -1,8 +1,8 @@
 from pyrogram import filters
 
-from mrjoker import pbot
-from mrjoker.utils.errors import capture_err
-from mrjoker.function.carbonfunc import make_carbon
+from groupcare import pbot
+from groupcare.utils.errors import capture_err
+from groupcare.function.carbonfunc import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
