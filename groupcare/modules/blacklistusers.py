@@ -5,11 +5,11 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.blacklistusers_sql as sql
-from mrjoker import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import dev_plus
-from mrjoker.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from mrjoker.modules.logchannel import gloggable
+import groupcare.modules.sql.blacklistusers_sql as sql
+from groupcare import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from groupcare.modules.helper_funcs.chat_status import dev_plus
+from groupcare.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from groupcare.modules.logchannel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS
