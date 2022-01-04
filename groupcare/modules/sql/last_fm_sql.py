@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String
 
-from mrjoker.modules.sql import BASE, SESSION
+from groupcare.modules.sql import BASE, SESSION
 
 
 class LastFMUsers(BASE):
