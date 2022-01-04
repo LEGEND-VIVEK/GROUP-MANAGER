@@ -1,5 +1,5 @@
 from telethon import events
-from mrjoker import telethn
+from groupcare import telethn
 
 
 def register(**args):
