@@ -1,6 +1,6 @@
-from mrjoker import telethn as tbot
-from mrjoker import MONGO_DB_URL
-from mrjoker.events import register
+from groupcare import telethn as tbot
+from groupcare import MONGO_DB_URL
+from groupcare.events import register
 from telethon import *
 from telethon.tl import functions
 from pymongo import MongoClient
