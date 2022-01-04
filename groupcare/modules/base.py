@@ -88,7 +88,7 @@ async def __(event):
         )
 
     else:
-        m.name = "BassBoosted(Mr.Joker).mp3"
+        m.name = "BassBoosted(group manager).mp3"
         await lel.edit("`Now Exporting...`")
         await asyncio.sleep(0.3)
         out.export(m, format="mp3")
