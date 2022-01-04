@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from mrjoker.modules.sql import BASE, SESSION
+from groupcare.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
