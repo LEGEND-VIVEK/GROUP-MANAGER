@@ -12,9 +12,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from mrjoker import dispatcher
-from mrjoker.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from mrjoker.modules.helper_funcs.misc import is_module_loaded
+from groupcare import dispatcher
+from groupcare.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from groupcare.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -23,12 +23,12 @@ if is_module_loaded(FILENAME):
 
     from telegram.ext.dispatcher import run_async
 
-    from mrjoker.modules.helper_funcs.chat_status import (
+    from groupcare.modules.helper_funcs.chat_status import (
         connection_status,
         is_user_admin,
         user_admin,
     )
-    from mrjoker.modules.sql import disable_sql as sql
+    from groupcare.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
