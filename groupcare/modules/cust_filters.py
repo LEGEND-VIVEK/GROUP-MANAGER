@@ -15,23 +15,23 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from mrjoker import DRAGONS, LOGGER, dispatcher
-from mrjoker.modules.connection import connected
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message, typing_action
-from mrjoker.modules.helper_funcs.chat_status import user_admin
-from mrjoker.modules.helper_funcs.extraction import extract_text
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker.modules.helper_funcs.handlers import MessageHandlerChecker
-from mrjoker.modules.helper_funcs.misc import build_keyboard_parser
-from mrjoker.modules.helper_funcs.msg_types import get_filter_type
-from mrjoker.modules.helper_funcs.string_handling import (
+from groupcare import DRAGONS, LOGGER, dispatcher
+from groupcare.modules.connection import connected
+from groupcare.modules.disable import DisableAbleCommandHandler
+from groupcare.modules.helper_funcs.alternate import send_message, typing_action
+from groupcare.modules.helper_funcs.chat_status import user_admin
+from groupcare.modules.helper_funcs.extraction import extract_text
+from groupcare.modules.helper_funcs.filters import CustomFilters
+from groupcare.modules.helper_funcs.handlers import MessageHandlerChecker
+from groupcare.modules.helper_funcs.misc import build_keyboard_parser
+from groupcare.modules.helper_funcs.msg_types import get_filter_type
+from groupcare.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from mrjoker.modules.sql import cust_filters_sql as sql
+from groupcare.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 
