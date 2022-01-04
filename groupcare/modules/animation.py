@@ -4,9 +4,9 @@ from typing import List
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import user_admin
+from groupcare import dispatcher
+from groupcare.modules.disable import DisableAbleCommandHandler
+from groupcare.modules.helper_funcs.chat_status import user_admin
 
 
 
@@ -58,7 +58,7 @@ kill_you = [
             "------------------>",    
             "------>;(^。^)ノ",
             "(￣ー￣) DED",
-            "**Target killed successfully"
+            "**Targeted person killed successfully"
 ]
 
 
