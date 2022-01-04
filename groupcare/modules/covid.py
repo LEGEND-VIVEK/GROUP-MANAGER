@@ -2,8 +2,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
+from groupcare import dispatcher
+from groupcare.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
