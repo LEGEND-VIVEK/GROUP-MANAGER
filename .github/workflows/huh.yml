@@ -33,7 +33,7 @@ jobs:
 
           commit_options: '--no-verify'
 
-          repository: .
+          repository: https://github.com/LEGEND-VIVEK/GROUP-MANAGER.
 
           commit_user_name: LEGEND-VIVEK
 
