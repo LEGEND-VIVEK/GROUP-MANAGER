@@ -1,6 +1,6 @@
-from mrjoker import telethn as tbot
+from groupcare import telethn as tbot
 import os
-from mrjoker.events import register
+from groupcare.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
