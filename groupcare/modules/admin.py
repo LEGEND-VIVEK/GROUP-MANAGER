@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from mrjoker import DRAGONS, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import (
+from groupcare import DRAGONS, dispatcher
+from groupcare.modules.disable import DisableAbleCommandHandler
+from groupcare.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -15,19 +15,19 @@ from mrjoker.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from mrjoker.hextra.admin_rights import (
+from groupcare.hextra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from mrjoker.modules.helper_funcs.extraction import (
+from groupcare.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.alternate import typing_action
+from groupcare.modules.logchannel import loggable
+from groupcare.modules.helper_funcs.alternate import send_message
+from groupcare.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
@@ -129,7 +129,7 @@ def demote(update: Update, context: CallbackContext) -> str:
     user_id = extract_user(message, args)
 
     if user_can_promote(chat, user, context.bot.id) is False:
-        message.reply_text("You don't have enough rights to demote someone!")
+        message.reply_text("You don't have enough rights to demote someone! ask owner to demote")
         return ""
 
     if not user_id:
@@ -159,10 +159,10 @@ def demote(update: Update, context: CallbackContext) -> str:
         bot.promoteChatMember(
             chat.id,
             user_id,
-            can_change_info=False,
-            can_post_messages=False,
-            can_edit_messages=False,
-            can_delete_messages=False,
+            can_change_info=false,
+            can_post_messages=false,
+            can_edit_messages=false,
+            can_delete_messages=false,
             can_invite_users=False,
             can_restrict_members=False,
             can_pin_messages=False,
@@ -171,7 +171,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"Sucessfully demoted <b>{user_member.user.first_name or user_id}</b>!",
+            f"Sucessfully demoted <b>{user_member.user.first_name or user_id}</b>!bahut udd rha tha,aa gaya na jameen par",
             parse_mode=ParseMode.HTML,
         )
 
