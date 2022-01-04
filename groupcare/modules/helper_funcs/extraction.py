@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from mrjoker import LOGGER
-from mrjoker.modules.user import get_user_id
+from groupcare import LOGGER
+from groupcare.modules.user import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
