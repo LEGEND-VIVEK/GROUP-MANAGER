@@ -2,12 +2,12 @@ import asyncio
 import sys
 
 from motor import motor_asyncio
-from mrjoker import MONGO_DB_URL
+from groupcare import MONGO_DB_URL
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
 
-MONGO_DB = "MrJoker"
+MONGO_DB = "mrjoker"
 
 
 client = MongoClient()
