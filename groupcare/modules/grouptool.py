@@ -2,8 +2,8 @@ import os
 
 from pyrogram import filters
 
-from mrjoker.pyro.pluginshelper import member_permissions
-from mrjoker import pbot as mrjoker
+from groupcare.pyro.pluginshelper import member_permissions
+from groupcare import pbot as mrjoker
 
 
 @mrjoker.on_message(filters.command("setgtitle") & ~filters.private)
