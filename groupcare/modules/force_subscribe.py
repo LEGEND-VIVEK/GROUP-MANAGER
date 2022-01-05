@@ -10,9 +10,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from mrjoker import DRAGONS as SUDO_USERS
-from mrjoker import pbot
-from mrjoker.modules.sql_extended import forceSubscribe_sql as sql
+from groupcare import DRAGONS as SUDO_USERS
+from groupcare import pbot
+from groupcare.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -180,7 +180,7 @@ def config(client, message):
 __help__ = """
 *ForceSubscribe:*
 
- 🔹 Mr.Joker can mute members who are not subscribed your channel until they subscribe
+ 🔹 group manager can mute members who are not subscribed your channel until they subscribe
  🔹 When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 
 *Setup*
