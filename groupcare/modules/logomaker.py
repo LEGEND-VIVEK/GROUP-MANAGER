@@ -6,9 +6,9 @@ import glob
 import time
 import requests
 
-from mrjoker.events import register
-from mrjoker import OWNER_ID
-from mrjoker import telethn as tbot
+from groupcare.events import register
+from groupcare import OWNER_ID
+from groupcare import telethn as tbot
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from io import BytesIO
@@ -305,7 +305,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!🤡')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./mrjoker/pack/blackimg.jpg')
@@ -345,7 +345,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!🤡')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./mrjoker/pack/fjoker.jpg')
