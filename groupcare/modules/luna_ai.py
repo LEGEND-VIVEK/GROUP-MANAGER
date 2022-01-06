@@ -8,9 +8,9 @@ from asyncio import gather, get_event_loop, sleep
 from googletrans import Translator as google_translator
 from pyrogram import filters, idle
 
-from mrjoker import BOT_ID, pbot as mrjoker
-from mrjoker.hextra.aichat import add_chat, get_session, remove_chat
-from mrjoker.pyro.pluginshelper import admins_only, edit_or_reply
+from groupcare import BOT_ID, pbot as mrjoker
+from groupcare.hextra.aichat import add_chat, get_session, remove_chat
+from groupcare.pyro.pluginshelper import admins_only, edit_or_reply
 
 translator = google_translator()
 
