@@ -14,12 +14,12 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.locks_sql as sql
-from mrjoker import DRAGONS, LOGGER, dispatcher
-from mrjoker.modules.connection import connected
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message, typing_action
-from mrjoker.modules.helper_funcs.chat_status import (
+import groupcare.modules.sql.locks_sql as sql
+from groupcare import DRAGONS, LOGGER, dispatcher
+from groupcare.modules.connection import connected
+from groupcare.modules.disable import DisableAbleCommandHandler
+from groupcare.modules.helper_funcs.alternate import send_message, typing_action
+from groupcare.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
