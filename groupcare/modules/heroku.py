@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from mrjoker import HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from mrjoker.events import register
+from groupcare import HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from groupcare.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
