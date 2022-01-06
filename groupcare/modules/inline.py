@@ -24,9 +24,9 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from mrjoker.utils.inlinehelper import *
-from mrjoker.utils.plh import fetch, json_prettify
-from mrjoker import pbot as app, OPENWEATHERMAP_ID, TIME_API_KEY
+from groupcare.utils.inlinehelper import *
+from groupcare.utils.plh import fetch, json_prettify
+from groupcare import pbot as app, OPENWEATHERMAP_ID, TIME_API_KEY
 
 dictionary = PyDictionary()
 
