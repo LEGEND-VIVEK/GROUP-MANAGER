@@ -2,7 +2,7 @@ import json
 import re
 import html
 import requests
-import mrjoker.modules.sql.kukiai_sql as sql
+import groupcare.modules.sql.kukiai_sql as sql
 
 from time import sleep
 from pyrogram.types import (
@@ -17,10 +17,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from mrjoker import dispatcher, updater, SUPPORT_CHAT
-from mrjoker.modules.logchannel import gloggable
+from groupcare.modules.helper_funcs.filters import CustomFilters
+from groupcare.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from groupcare import dispatcher, updater, SUPPORT_CHAT
+from groupcare.modules.logchannel import gloggable
 
  
 @user_admin_no_reply
